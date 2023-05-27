@@ -1,0 +1,117 @@
+.sale-fixed {
+  position: fixed;
+  left: 0;
+  top: 80%;
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 130px;
+  border-radius: 0 10px 10px 0;
+  justify-content: space-around;
+  border: 1px solid #d1cfd7;
+  filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+  background: #fff;
+  z-index: 999;
+}
+.red-col {
+  height: 130px;
+  background: #fe5858;
+  width: 11px;
+}
+
+.price-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 130px;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.full-price-fixed {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.full-price{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 150%;
+  color: #051c2c;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.strike-through {
+  position: relative;
+}
+
+.previous-price {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0%;
+  text-align: center;
+}
+
+.strike-through:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  -webkit-transform: rotate(
+    -5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(
+    -7deg);
+}
+
+.sale-price {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 150%;
+  text-align: center;
+  color: #fe5858;
+}
+
+.sale-price span {
+  font-family: Gotham Pro;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #fe5858;
+}
+
+.sale-button{
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.social-fixed {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 48px;
+  height: 130px;
+  border-radius: 0 10px 10px 0;
+  z-index: 9999;
+  justify-content: space-around;
+  border: 1px solid #d1cfd7;
+}

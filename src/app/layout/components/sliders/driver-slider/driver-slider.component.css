@@ -1,0 +1,190 @@
+.drivers-container{
+  margin-top: 215px;
+}
+
+.driver-about{
+  padding-top: 200px;
+}
+
+.person-img{
+  width: 80%;
+}
+
+.driver-row{
+  position: relative;
+}
+
+.i-header{
+  font-size: 30px;
+}
+
+.driver-about{
+  z-index: -1;
+  position: absolute;
+}
+
+.driver-about-text{
+  width: 280px;
+}
+.dots{
+  position: absolute;
+  left: 48%;
+  text-align:center;
+  z-index: 10;
+}
+
+.bg-w{
+  min-height: 197px;
+  background: #FFFFFF;
+  padding-left: 40px;
+}
+
+.text-start{
+  display: inline-block;
+  width: 65%;
+}
+.text-end{
+  display: inline-block;
+  width: 35%;
+}
+
+.bg-blue{
+  min-height: 197px;
+  background: #636DF9;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-top: 33px;
+}
+
+.v-end{
+  font-weight: 600;
+
+  color: #64636C;
+}
+
+.line{
+  /*margin-bottom: 5px; */
+}
+
+.bg-blue .doc-bold, .bg-blue .value-tiny, .bg-blue .v-end
+{
+  color: white;
+}
+
+
+.doc-bold{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 140%;
+  margin-bottom: 0;
+  /* or 36px */
+
+
+  /* Main dark pantone */
+
+  color: #051C2C;
+}
+
+.doc-tiny{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 22px */
+
+
+  color: #64636C;
+}
+.driver-slider{
+  transition: 0.3s;
+  display: none;
+}
+
+.slider-show{
+  display: initial;
+}
+
+.d-dot{
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background: #E7E9EC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .d-dot:hover {
+  background: #636DF9;
+}
+
+.fade_ {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@media (min-width: 1200px) {
+  .dots{
+    margin-top: 0;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .dots{
+    margin-top: -70px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .dots{
+    margin-top: -140px;
+  }
+}
+
+
+@media (max-width: 1200px){
+  .drivers-container{
+    margin-top: 150px;
+  }
+  .driver-about{
+    position: initial;
+    padding-top: 0px;
+  }
+
+  .person-img{
+    margin-bottom: -120px;
+  }
+
+  .bg-w{
+    height: 269px;
+    padding-top: 85px;
+    background: #EEEEEE;
+    border-radius: 10px 10px 0 0;
+    padding-right: 40px;
+  }
+  .bg-blue{
+    border-radius: 0 0 10px 10px;
+    padding-right: 40px;
+  }
+  .driver-about-text{
+    width: 100%;
+  }
+}
+
+
+@-webkit-keyframes fade{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

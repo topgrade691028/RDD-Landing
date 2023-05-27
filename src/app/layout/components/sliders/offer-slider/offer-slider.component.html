@@ -1,0 +1,187 @@
+<div class="offers">
+  <p class="offer-header">
+    Оберіть потрібний пакет послуг
+  </p>
+  <p class="header-underline">
+    Сплачуйте за те, що Вам потрібно
+  </p>
+  <p class="notification" id="not">Інші категорії в розробці. Наразі достуна лише категорія В.</p>
+  <div class="categories">
+    <button class="btn-col-3 btn btn-padding btn-text btn-border" id="btn-1" (click)="id = 1; changeTxt()" [ngClass]="{'btn-text-activate': id === -1}">Категорія А</button>
+    <button class="btn-col-3 btn btn-padding btn-text btn-border" id="btn-2" (click)="id = 2; changeTxt()" [ngClass]="{'btn-text-activate': id != -1}">Категорія B</button>
+    <button class="btn-col-3 btn btn-padding btn-text btn-border" id="btn-3" (click)="id = 3; changeTxt()" [ngClass]="{'btn-text-activate': id === -1}">Категорія C</button>
+    <button class="btn-col-3 btn btn-padding btn-text btn-border" id="btn-4" (click)="id = 4; changeTxt()" [ngClass]="{'btn-text-activate': id === -1}">Категорія C1</button>
+  </div>
+  <div class="row">
+    <div *ngIf="isShow" class="col-xl-4 offer-slider fade_" id="offer-2">
+      <div class="offer-list">
+        <div class="l-header">
+          <p class="l-h-text">Практика</p>
+          <span class="l-price">1650 </span><span class="l-currency"> грн.</span>
+          <p class="pass">(для тих, у кого є права)</p>
+          <button (click)="redirect()" class="btn l-take" style="margin-top: 5px">Обрати</button>
+        </div>
+        <div class="offer-about">
+          <ul class="list-slider-about">
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">Навчальні матеріали</span>
+                </div>
+              </div>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="no-icon" src="assets/imgs/home/no.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">30 лекцій з тестами</span>
+                </div>
+              </div>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">3 практичних занять *</span>
+                </div>
+              </div>
+              <p class="li-text-small">Можливість додатково докупити<br>практичні заняття (500грн/заняття)</p>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="no-icon" src="assets/imgs/home/no.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">Реєстрація учня в ЄДР МВС для складання державного іспиту</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isShow" class="col-xl-4 offer-slider fade_" id="offer-0">
+      <div class="offer-list">
+        <div class="l-header">
+          <p class="l-h-text">Теорія + Практика</p>
+          <span class="l-price">3999 </span><span class="l-currency"> грн.</span>
+          <p class="pass">(для тих, у кого є права)</p>
+          <button (click)="redirect()" class="btn l-take" style="margin-top: 5px">Обрати</button>
+        </div>
+        <div class="offer-about">
+          <ul class="list-slider-about">
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">Навчальні матеріали</span>
+                </div>
+              </div>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">30 лекцій з тестами</span>
+                </div>
+              </div>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">5 практичних занять</span>
+                </div>
+              </div>
+              <p class="li-text-small">В ціну входять 5 занять з<br>інструктором по 1.5 години</p>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="no-icon" src="assets/imgs/home/no.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">Реєстрація учня в ЄДР МВС для складання державного іспиту</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 offer-slider fade_" [class.col-xl-12]="!isShow"  id="offer-1">
+      <div class="offer-list offer-special">
+        <div class="l-header">
+          <p class="l-h-text">Повний курс з отриманням посвідчення водія <span style="color: #fe5858;">Акція*</span> </p>
+          <span class="l-price">8999 </span><span class="l-currency"> грн.</span>
+          <br>
+          <button (click)="redirect()" class="btn l-take">Обрати</button>
+        </div>
+        <div class="offer-about">
+          <ul class="list-slider-about">
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">Навчальні матеріали</span>
+                </div>
+              </div>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">30 лекцій з тестами</span>
+                </div>
+              </div>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">10 практичних занять</span>
+                </div>
+              </div>
+              <p class="li-text-small">В ціну входять 10 занять з<br>інструктором по 1.5 години</p>
+            </li>
+            <li class="li-slider li-2">
+              <div class="row row-cols-2">
+                <div class="col-1">
+                  <img alt="ok-icon" src="assets/imgs/slider/ok.png">
+                </div>
+                <div class="col-11">
+                  <span class="li-text-bold">Реєстрація учня в ЄДР МВС для складання державного іспиту</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="isShow" style="text-align:center">
+      <span class="o-dot active" onclick="currentSlide(1, 'offer-slider', 'o-dot', ' active')"></span>
+      <span class="o-dot" onclick="currentSlide(2, 'offer-slider', 'o-dot', ' active')"></span>
+      <span class="o-dot" onclick="currentSlide(3, 'offer-slider', 'o-dot', ' active')"></span>
+    </div>
+  </div>
+</div>

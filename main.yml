@@ -1,0 +1,10 @@
+---
+- name: Deploy landing
+  hosts: "{{ env }}"
+  remote_user: ubuntu
+  become: true
+
+  roles:
+    - role: docker.docker
+    - role: landing
+

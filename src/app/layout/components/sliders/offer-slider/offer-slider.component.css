@@ -1,0 +1,17 @@
+.notification{
+  transition: 0.3s;
+  opacity: 0;
+  font-family: "Gotham Pro";
+  color: red;
+}
+
+.pass{
+  font-style: normal;
+  font-family: "Gotham Pro";
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.offer-slider{
+  transition: 0.3s;
+}

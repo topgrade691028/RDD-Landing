@@ -1,0 +1,28 @@
+.container {
+  background: #fff;
+  box-shadow: 0 4px 26px rgba(37, 46, 64, 0.05);
+  border-radius: 20px;
+}
+.container .container-information .title {
+  font-family: Gotham Pro Bold, serif;
+  font-size: 22px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #23283c;
+}
+.container .container-information .subtitle {
+  font-family: Gotham Pro, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #757380;
+}
+.container .cancel {
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  cursor: pointer;
+}

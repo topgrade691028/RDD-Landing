@@ -1,0 +1,29 @@
+<button class="exit">
+  <img (click)="closeDialog()" src="../../../assets/icons/white-cancel.svg">
+</button>
+<div class="dialog-container container">
+  <img src="../../../assets/icons/for-mobile-version.svg">
+  <div class="content container-information">
+    <div class="title">
+      <p>
+        {{forGooglePlay ? ('Завантажте мобільний додаток для AppStore') : 'Скануйте QR code для завантаження додатку'}}
+      </p>
+    </div>
+    <div class="subtitle">
+      <p>
+        Сканувати QR code для
+      </p>
+    </div>
+    <img class="qr-code" src="../../../assets/imgs/mobile/QR-code.jpg">
+    <div class="footer">
+      <div class="qr-text">
+        <p>
+          Сканувати QR code для
+        </p>
+      </div>
+      <div (click)="forGooglePlay = !forGooglePlay" class="google-play">
+        <p>{{forGooglePlay ? ' Google play' : 'AppStore'}}</p>
+      </div>
+    </div>
+  </div>
+</div>

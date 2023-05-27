@@ -1,0 +1,33 @@
+<div *ngIf="isShow" class="lecture-container">
+  <img class="lecture-bg" alt="background-img" src="assets/imgs/others/lections-bg.svg">
+  <span class="centered-text">
+      <span>Три лекції - </span><span class="free">БЕЗКОШТОВНО!</span>
+    </span>
+  <div class="centered-lecture">
+    <div class="lecture-cont lectureSliders slide-show fade_">
+      <iframe style="border-radius: 5px" longdesc="none" loading="eager" class="lecture" src="https://drive.google.com/file/d/1MIgBtGriTG0fiWfxOgnuLphemhikRX-i/preview" allow="fullscreen"></iframe>
+    </div>
+    <div class="lecture-cont lectureSliders fade_">
+    <iframe style="border-radius: 5px" loading="eager"  class="lecture" src="https://drive.google.com/file/d/15TiHLLd0YzewZFFoKvFGdcaBl2oBOu4R/preview" allow="fullscreen"></iframe>
+    </div>
+    <div class="lecture-cont lectureSliders fade_">
+      <iframe style="border-radius: 5px" loading="eager"  class="lecture" src="https://drive.google.com/file/d/1qMpmuMhnSO9rKW0sQ7vzt0t0ueIIcviI/preview" allow="fullscreen"></iframe>
+    </div>
+
+    <div style="text-align:center">
+      <span class="l-dot d-active" onclick="currentSlide(1, 'lectureSliders', 'l-dot', ' d-active')"></span>
+      <span class="l-dot" onclick="currentSlide(2, 'lectureSliders', 'l-dot', ' d-active')"></span>
+      <span class="l-dot" onclick="currentSlide(3, 'lectureSliders', 'l-dot', ' d-active')"></span>
+    </div>
+  </div>
+  <span class="centered-about">
+      <p>Зареєструйтесь в додатку, щоб дізнатись більше</p>
+      <p>про переваги RomDomDom</p>
+    </span>
+
+  <div class="try-button">
+    <button>
+      <a href="https://romdomdom.in.ua/authorization/registration" class="try-free">СПРОБУЙТЕ БЕЗКОШТОВНО</a>
+    </button>
+  </div>
+</div>

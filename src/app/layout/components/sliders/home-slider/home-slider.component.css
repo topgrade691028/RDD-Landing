@@ -1,0 +1,385 @@
+.fade_ {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.carousel-text-block {
+  padding-top: 180px;
+  width: 417px;
+  margin: 0 0 350px 200px;
+}
+
+.sign{
+  position: absolute;
+  right: 70px;
+  top: 460px;
+  z-index: 15;
+}
+
+.main-slides{
+  display: none;
+}
+
+.quality-popup-1 {
+  position: absolute;
+  z-index: 5;
+  right: 115px;
+  top: 80px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+.test-popup {
+  position: absolute;
+  z-index: 5;
+  right: 140px;
+  top: 395px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+.lectures-popup{
+  position: absolute;
+  z-index: 5;
+  right: 30px;
+  top: 100px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+.person-popup{
+  position: absolute;
+  z-index: 5;
+  right: 215px;
+  top: 130px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+.cart-popup{
+  position: absolute;
+  z-index: 5;
+  right: -40px;
+  top: 160px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+.about-popup{
+  position: absolute;
+  z-index: 5;
+  right: 285px;
+  top: 412px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+
+.slides-show{
+  display: block;
+}
+
+.carousel-main-text {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 110%;
+  /* or 50px */
+
+  color: #051c2c;
+}
+
+.main-text{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 110%;
+}
+
+.lectures-about{
+  width: 250px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.lectures-main-text{
+  text-align: center;
+  width: 74px;
+  display: inline-block;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 110%;
+  /* or 50px */
+
+
+  /* Blue */
+
+  color: #636DF9;
+
+  background: rgba(99, 109, 249, 0.2);
+  /* Blue */
+
+  border: 1px solid #636DF9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.carousel-main-text-smartphone {
+  background: rgba(99,109,249,.2);
+  border: 1px solid #636df9;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 110%;
+  letter-spacing: .05em;
+  color: #636df9;
+  padding: 10px 20px;
+  width: 250px;
+}
+
+.dots{
+  position: absolute;
+  top: 680px;
+  left: 69%;
+  text-align:center;
+  z-index: 10;
+}
+
+.m-dot{
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background: #E7E9EC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .m-dot:hover {
+  background: #636DF9;
+}
+
+.carousel-description-text {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #4d4c57;
+  margin-top: 50px;
+  height: 110px;
+}
+
+.blue-circle-img {
+  position: absolute;
+  top: 95px;
+  width: 610px;
+  height: 610px;
+  right: 10%;
+}
+
+.phone-popup {
+  position: absolute;
+  z-index: 3;
+  right: 110px;
+  top: 0;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+.full-popup {
+  position: absolute;
+  z-index: 5;
+  right: 300px;
+  top: 275px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+.quality-popup {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  top: 50px;
+  display: block;
+  opacity: 0;
+  transition: none;
+}
+
+.road-line {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  background-image: url('src/assets/imgs/home/road.png');
+  top: 490px;
+}
+
+.car-movement {
+  overflow: hidden;
+  font-size: 40px;
+  position: relative;
+}
+
+.orange-car {
+  top: 20px;
+}
+
+.car-movement>.car1 {
+  position: relative;
+  display: inline-block;
+  animation: linear infinite;
+  animation-name: run2;
+  animation-duration: 10s;
+}
+
+.car-movement {
+  overflow: hidden;
+  font-size: 40px;
+  position: relative;
+}
+
+.white-car {
+  bottom: 10px;
+}
+.car-movement>.car {
+  position: relative;
+  display: inline-block;
+  animation: linear infinite;
+  animation-name: run;
+  animation-duration: 9s;
+}
+
+.main-img{
+  max-width: 460px;
+}
+
+.slider-adapt-1{
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .carousel-text-block {
+    transition: 0.3s;
+    padding-top: 200px;
+    width: 100%;
+    max-width: 417px;
+    margin: 0 0 350px 100px;
+  }
+
+  .dots{
+    left: 66%;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .dots{
+    display: none;
+  }
+
+  .c-2, .c-3, .c-4{
+    display: none !important;
+  }
+  .c-1{
+    display: block !important;
+  }
+
+  .slider-adapt{
+    display: none;
+  }
+  .slider-adapt-1{
+    display: block;
+    text-align: center;
+  }
+  .carousel-text-block {
+    transition: 0.3s;
+    margin: 0 0 0 35%;
+  }
+  .road-line{
+    top: 740px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-text-block {
+    transition: 0.3s;
+    margin: 0 0 0 30%;
+    padding-top: 80px;
+  }
+
+  .road-line{
+    top: 680px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-text-block {
+    transition: 0.3s;
+    margin: 0 0 0 20%;
+  }
+}
+
+@media (max-width: 540px) {
+  .carousel-text-block {
+    transition: 0.3s;
+    margin: 0 0 0 10px;
+  }
+}
+
+@keyframes run2 {
+  0% {
+    transform: rotateY(
+      0deg);
+    left: 100%;
+  }
+  50% {
+    transform: rotateY(
+      0deg);
+    left: -100px;
+  }
+  51% {
+    transform: rotateY(180deg);
+    left: -100px;
+  }
+  100% {
+    transform: rotateY(
+      180deg);
+    left: 100%;
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: rotateY(0deg);
+    left: -100px;
+  }
+  50% {
+    transform: rotateY(0deg);
+    left: 100%;
+  }
+  51% {
+    transform: rotateY(180deg);
+    left: calc(100% + 100px);
+  }
+  100% {
+    transform: rotateY(180deg);
+    left: -100px;
+  }
+}

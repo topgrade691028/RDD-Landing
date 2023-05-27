@@ -1,0 +1,165 @@
+<app-header></app-header>
+<app-menu></app-menu>
+
+<app-home-slider></app-home-slider>
+
+<div class="container main-info">
+
+  <app-lectures></app-lectures>
+
+  <div class="active-users">
+    <span class="users-num">{{num[0]}}</span>
+    <span class="users-num" style="margin-right: 4px">{{num[1]}}</span>
+    <span class="users-num">{{num[2]}}</span>
+    <span class="users-num" style="margin-right: 4px">{{num[3]}}</span>
+    <span class="users-num">{{num[4]}}</span>
+    <span class="users-num">{{num[5]}}</span>
+    <span class="active-users-text">активних користувачів <a href="https://romdomdom.in.ua/" class="in-app">додатку</a></span>
+  </div>
+
+  <div class="app-about row row-cols-2">
+    <div class="col-md-3 about-content col-sm-6">
+      <img alt="location-img" src="assets/imgs/home/Location.svg">
+      <p class="bold">Свобода місця</p>
+      <p class="tiny">З нами Ви зможете вивчати теорію в будь-якому місці</p>
+    </div>
+    <div class="col-md-3 about-content col-sm-6">
+      <img alt="timeCircle-icon" src="assets/imgs/home/TimeCircle.svg">
+      <p class="bold">Свобода часу</p>
+      <p class="tiny">Економте Ваш час! Навчайтесь тоді, коли це зручно саме Вам</p>
+    </div>
+    <div class="col-md-3 about-content col-sm-6">
+      <img  alt="hourglass-icon" src="assets/imgs/home/hourglass.svg">
+      <p class="bold" style="margin-top: 36px">Свобода темпу</p>
+      <p class="tiny">Вивчайте теорію та проходьте тести в комфортному темпі</p>
+    </div>
+    <div class="col-md-3 about-content col-sm-6">
+      <img alt="shield-icon" src="assets/imgs/home/ShieldDone.svg">
+      <p class="bold">Контроль якості</p>
+      <p class="tiny">Слідкуйте в додатку за рівнем Ваших знань перед державним іспитом</p>
+    </div>
+  </div>
+
+  <div class="app-about-bg row">
+    <div class="col-md-6 tel-box">
+      <img alt="telephone-img" class="telephone-img" src="assets/imgs/home/telephone.png">
+    </div>
+    <div class="col-md-5 text-box">
+      <p class="car-waiting">Виходьте, авто чекає!</p>
+      <p class="car-about">Плануйте Ваші практичні поїздки, обирайте час та місце і інструктор приїде на вказану Вами адресу</p>
+      <p class="with-rdd">Більше комфорту з ROMDOMDOM!</p>
+    </div>
+  </div>
+
+  <div class="slider-about">
+    <app-main-slider></app-main-slider>
+  </div>
+
+  <div class="surcharge-container">
+    <div class="container cont-middle">
+        <div class="row row-cols-2">
+          <div class="col-md-5 img-box">
+            <img alt="fuel-icon" src="assets/imgs/home/fuel.png">
+          </div>
+          <div class="col-md-5 surcharge-text">
+            <p class="surcharge-header">Ніяких прихованих доплат</p>
+            <div class="surcharge-adaptive">
+              <p class="surcharge-tiny">Ми працюємо за принципом єдиної ціни.<br>Сплачуйте один раз за весь курс навчання теорії та практики без жодних доплат за пальне тощо.</p>
+              <p class="surcharge-tiny green surcharge-bottom">Економте ваші кошти з ROMDOMDOM</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container-adaptive-2">
+            <div class="col-md-12 surcharge-adaptive-2">
+              <p class="surcharge-tiny">Ми працюємо за принципом єдиної ціни.<br>Сплачуйте один раз за весь курс навчання теорії та практики без жодних доплат за пальне тощо.</p>
+              <p class="surcharge-tiny green surcharge-bottom">Економте ваші кошти з ROMDOMDOM</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<app-video></app-video>
+
+<div class="container main-info second-cont">
+  <app-offer-slider></app-offer-slider>
+
+  <div class="row who-container flex-column-reverse flex-xl-row">
+    <div class="col-xl-6 col-xl-img">
+      <img alt="whoIs-img" class="w-all who-img" src="assets/imgs/home/who.png">
+    </div>
+    <div class="col-xl-1"></div>
+    <div class="col-xl-4">
+      <div class="container-middle">
+        <p class="doc-bold">Хто за всім стоїть?</p>
+        <p class="doc-tiny">Ми – злагоджена команда, що працює на високий результат. Кожен з нас, найкращий у своїй сфері відповідальності.<br><br>Ми молоді та амбітні. Як часто це буває, нас усіх зібрала спільна мрія змінити світ.</p>
+        <button (click)="redirect('/about')" class="btn btn-outline-primary doc-btn">Дізнатися більше</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-values">
+    <p class="doc-bold">
+      Цінності ROMDOMDOM
+    </p>
+    <div class="row values">
+      <div class="col-lg-6 value-col">
+        <div class="value">
+          <div class="row">
+            <div class="col-lg-2">
+              <img alt="background-icon" src="assets/imgs/home/v-1.svg">
+            </div>
+            <div class="col-lg-10">
+              <p class="value-bold">Безпечно та надійно</p>
+              <p class="value-tiny">Ваша конфіденційність завжди надійно захищена. Наш веб-сайт використовує SSL сертифікати, що є гарантією збереження Ваших даних</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 value-col">
+        <div class="value">
+          <div class="row">
+            <div class="col-lg-2">
+              <img alt="background1-icon"  src="assets/imgs/home/v-2.svg">
+            </div>
+            <div class="col-lg-10">
+              <p class="value-bold">Жодних прихованих доплат</p>
+              <p class="value-tiny">Сплачуєте один раз. Ми працюємо за принципом єдиної ціни.Жодних прихованих платежів за пальне в процесі навчання</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 value-col">
+        <div class="value">
+          <div class="row">
+            <div class="col-lg-2">
+              <img alt="background2-icon"  src="assets/imgs/home/v-3.svg">
+            </div>
+            <div class="col-lg-10">
+              <p class="value-bold">Доступне навчання 24/7</p>
+              <p class="value-tiny">Тепер Ви обираєте як, де і коли Вам навчатись. З нашим мобільним додатком, Ви отримаєте максимум свободи. Все у Вас під рукою</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 value-col">
+        <div class="value">
+          <div class="row">
+            <div class="col-lg-2">
+              <img alt="background3-icon"  src="assets/imgs/home/v-4.svg">
+            </div>
+            <div class="col-lg-10">
+              <p class="value-bold">Підтримка</p>
+              <p class="value-tiny">За потреби кваліфіковані спеціалісти нашого колл-центру готові надати Вам консультацію або допомогу на усіх етапах навчання</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-driver-slider></app-driver-slider>
+</div>
+
+<app-footer></app-footer>

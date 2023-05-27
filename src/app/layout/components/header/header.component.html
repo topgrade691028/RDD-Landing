@@ -1,0 +1,44 @@
+<nav class="nvb navbar navbar-expand-sm">
+  <div class="nav-item nav-brand">
+    <a routerLink="/" class="navbar-brand">
+      <img alt="brand-img" class="nav-brand-img" src="assets/imgs/others/brand.svg">
+    </a>
+  </div>
+  <div class="navbar-nav container-fluid nav-content">
+    <ul class="nav-routs navbar-nav justify-content-center">
+      <li class="nav-li">
+        <a class="nav-routing nav-link" routerLink="/education">Навчання</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-routing nav-link" routerLink="/about">Про нас</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-routing nav-link" routerLink="/partners">Партнери</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-routing nav-link" routerLink="/reviews">Відгуки</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-routing nav-link" routerLink="/contacts">Контакти</a>
+      </li>
+    </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="https://romdomdom.in.ua/authorization" class="btn btn-outline-primary btn-log">
+            Вхід
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://romdomdom.in.ua/authorization/registration" class="btn btn-primary btn-reg">
+            Реєстрація
+          </a>
+        </li>
+      </ul>
+    </div>
+  <div class="nvm" style="margin-left: auto;">
+    <a (click)="route()" class="nav-menu right">
+      <img alt="menu-icon" src="assets/imgs/others/menu.svg">
+    </a>
+  </div>
+</nav>

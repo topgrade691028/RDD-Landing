@@ -1,0 +1,20 @@
+.footer{
+  z-index: 100;
+  background: #F6F6F8;
+  display: block;
+  height: 76px;
+  position: absolute;
+  top: 734px;
+  width: 100%;
+}
+
+.img-center{
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.img-center .img-social{
+  margin-right: 30px;
+}

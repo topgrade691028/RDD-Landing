@@ -1,0 +1,38 @@
+.lecture-cont{
+  display: inline-block;
+}
+
+.text-under{
+  margin-top: -20px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+
+  color: #F2F2F2;
+}
+
+.l-dot{
+  display: none;
+}
+
+
+@media (max-width: 1200px) {
+  .lecture-cont{
+    display: none;
+  }
+  .l-dot{
+    display: inline-block;
+  }
+
+  .slide-show{
+    display: block;
+  }
+  .lecture{
+    width: auto;
+  }
+}

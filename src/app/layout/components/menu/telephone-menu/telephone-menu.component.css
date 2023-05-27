@@ -1,0 +1,99 @@
+body{
+  min-height: 812px !important;
+}
+
+.nav-img{
+  width: 100%;
+  text-align: center;
+}
+
+.routs-li{
+  margin-bottom: 50px;
+}
+
+.nvm-telephone{
+  right: 0;
+  position: absolute;
+}
+
+.tel-nvb{
+  min-height: 90px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+}
+
+.routs{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 110%;
+  text-decoration: none;
+
+  color: #45444E;
+}
+
+.container{
+  padding-left: 0;
+}
+
+.rout-list{
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.menu-content
+{
+  padding-top: 140px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tel-brand{
+  height: 35px;
+}
+
+.tel-log
+{
+  margin-top: 40px;
+}
+
+.tel-reg, .tel-log{
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-radius: 43px;
+  width: 238px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+
+.tel-reg:hover{
+  background-color: white;
+  color: #636df9;
+}
+
+
+.tel-log{
+
+}
+
+.fade_ {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

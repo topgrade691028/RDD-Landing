@@ -1,0 +1,301 @@
+.h-bold{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 110%;
+  /* or 39px */
+
+
+  /* Main dark pantone */
+
+  color: #051C2C;
+}
+
+.s-32{
+  font-size: 32px;
+}
+
+.about-education{
+  margin-top: 150px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.header-text{
+  margin-top: 185px;
+  padding-left: 130px;
+}
+
+.text-col .h-tiny{
+  margin-top: 0;
+}
+
+.for-free{
+  margin-right: 100%;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 140%;
+  /* identical to box height, or 27px */
+
+  letter-spacing: 0.08em;
+
+  /* Green */
+
+  color: #23C1B8;
+
+  transform: rotate(-90deg);
+}
+
+.rules{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rule-list{
+  padding-top: 15px;
+  width: 290px;
+  min-width: 290px;
+  height: 150px;
+
+  background: #F6F6F8;
+  border-radius: 10px
+}
+
+.rules li{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+
+
+  color: #64636C;
+}
+
+.s-24{
+  font-size: 24px;
+}
+
+.s-15{
+  font-size: 15px;
+}
+
+.text-col{
+  padding-left: 90px;
+}
+
+.h-tiny{
+  margin-top: 45px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: #64636C;
+}
+
+.img-cont
+{
+  margin-right: 0;
+}
+
+.header-container{
+  padding-top: 20px;
+  width: 100%;
+  margin-right: 0;
+}
+
+.header-container .row{
+  margin: 0;
+}
+.header-container .col-xl-7{
+  padding-right: 0;
+}
+
+.blocks{
+  margin-top: 200px;
+}
+
+.offer-container{
+  margin-top: 250px;
+}
+.li-slider{
+  list-style-type: none;
+  margin-top: 5px;
+}
+.list-slider-about{
+  padding-left: 0;
+}
+.li-text{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 210%;
+  /* or 31px */
+
+
+  color: #64636C;
+}
+
+.text-cont{
+  margin-top: 60px;
+}
+
+.tx-1{
+  margin-top: 100px;
+}
+
+.btn-ch{
+  padding-top: 19px;
+  margin-top: 55px;
+  width: 245px;
+  height: 58px;
+
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 110%;
+  /* identical to box height, or 18px */
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+  background: #636DF9;
+  border-radius: 43px;
+}
+
+.btn-ch:hover{
+  border: 2px solid #636DF9;
+
+  color: #636DF9;
+  background: #FFFFFF;
+}
+
+.line{
+  width: 0;
+  height: 100%;
+  border-left: 1px solid #CBCBD1;
+}
+
+.cont-adapt{
+  margin-top: 130px;
+  margin-bottom: 170px;
+}
+
+.exam{
+  padding: 61px 68px 72px 58px;
+  width: 100%;
+  min-height: 390px;
+  background: #F7F7FA;
+  border-radius: 30px;
+}
+
+.lg-second .h-tiny{
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .br-adapt{
+    display: none;
+  }
+  .adapt-cont{
+    text-align: center;
+  }
+  .img-adapt{
+    min-width: 340px;
+    max-width: 680px;
+    content: url("src/assets/imgs/education/bg-adapt.png");
+  }
+}
+
+.btn-adapt{
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .ln-cont{
+    display: none;
+  }
+  .btn-ch{
+    display: none;
+  }
+  .btn-adapt{
+    display: block;
+  }
+  .tx-1{
+    margin-top: 0;
+  }
+  .offer-container{
+    margin-top: 140px;
+  }
+  .blocks{
+    margin-top: 150px;
+  }
+  .bg1 .s-24{
+    font-size: 16px;
+  }
+  .bg1 .s-32{
+    font-size: 24px;
+  }
+  .header-text{
+    padding-left: 90px;
+    margin-top: 100px;
+  }
+  .rule-list{
+    background-color: #FFFFFF;
+  }
+  .for-free{
+    display: none;
+  }
+  .about-education{
+    padding-left: 90px;
+    margin-top: 100px;
+    text-align: initial;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .cont-adapt{
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .cont-adapt{
+    margin-bottom: 0;
+  }
+
+  .exam{
+    border-radius: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 120px;
+  }
+
+  .exm .container{
+    max-width: none;
+  }
+
+  .text-col{
+    padding-left: 10px;
+  }
+  .header-text{
+    padding-left: 10px;
+  }
+  .about-education{
+    padding-left: 10px;
+  }
+}

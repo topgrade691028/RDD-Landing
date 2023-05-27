@@ -1,0 +1,29 @@
+---
+# tasks file for landing
+
+- name: Create a network with driver options
+  community.docker.docker_network:
+    name: landing_net
+    driver: "bridge"
+
+- name: Remove old landing container
+  community.docker.docker_container:
+    name: landing
+    state: absent
+    container_default_behavior: compatibility
+  ignore_errors: yes
+
+- name: Launch new landing container
+  community.docker.docker_container:
+     name: landing
+     image: "{{ DOCKER_REGISTRY }}/{{ DOCKER_TAG }}"
+     state: started
+     restart_policy: unless-stopped
+     networks_cli_compatible: no
+     container_default_behavior: compatibility
+     exposed_ports:
+       - "80"
+     ports:
+       - "80:80"
+     networks:
+       - name: "landing_net"

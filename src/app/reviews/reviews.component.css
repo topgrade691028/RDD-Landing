@@ -1,0 +1,124 @@
+.text-tiny{
+
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+
+  color: #4D4C57;
+}
+
+.review-header{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 110%;
+  /* or 24px */
+
+
+  /* Main dark pantone */
+
+  color: #051C2C;
+}
+
+.review-text{
+  margin-top: 40px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: #64636C;
+}
+
+.reviews{
+}
+
+.about-person{
+  margin-top: 5px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+
+  /* grey1 */
+
+  color: #64636C;
+}
+
+.review-adaptive-2{
+  display: none;
+}
+
+.review-container
+{
+  padding: 40px;
+}
+
+.person{
+  width: 100%;
+  filter: drop-shadow(0px 14px 25px rgba(55, 42, 77, 0.16));
+}
+
+.review{
+  width: 100%;
+  background: #F7F7FA;
+  border-radius: 30px;
+  margin: 30px 0;
+}
+
+.reviews-about{
+  margin-top: 40px;
+  padding-right: 150px;
+}
+
+.header{
+  margin-top: 150px;
+}
+
+@media (max-width: 992px) {
+
+  .reviews-about{
+    padding-right: 0;
+  }
+
+  .review-adaptive{
+    display: none;
+  }
+
+  .text-adaptive{
+    text-align: end;
+  }
+
+  .review-adaptive-2{
+    display: block;
+  }
+
+  .header{
+    margin-top: 0;
+  }
+
+  .review-container{
+    padding: 20px;
+  }
+
+  .reviews{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 100px;
+  }
+
+  .review{
+    margin: 20px 0;
+  }
+}

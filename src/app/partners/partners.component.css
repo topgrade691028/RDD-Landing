@@ -1,0 +1,105 @@
+.header{
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 110%;
+  /* or 50px */
+
+
+  /* Main dark pantone */
+
+  color: #051C2C;
+}
+
+.header-tiny{
+  margin-top: 50px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+
+  color: #64636C;
+}
+
+.txt-pad{
+  padding-left: 190px;
+  padding-top: 120px;
+}
+
+.txt-pad-2{
+  padding-left: 190px;
+  padding-top: 120px;
+}
+
+.partners{
+  padding-top: 130px;
+  width: 100%;
+  padding-right: 0;
+}
+
+.bg-1{
+  padding-left: 77px;
+}
+
+.block-inline{
+  display: inline-block;
+  text-align: center;
+}
+
+.softserve-row{
+  margin-top: 160px;
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background: #F7F7FA;
+}
+
+@media (max-width: 1200px) {
+  .txt-pad, .txt-pad-2{
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+
+  .header{
+    font-size: 31px;
+  }
+
+  .bg-1{
+    padding-left: 0px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .s-4{
+    display: none;
+  }
+
+  .s-1, .s-2, .s-3{
+    width: 33%!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-3{
+    display: none;
+  }
+
+  .s-1, .s-2{
+    width: 50%!important;
+  }
+}
+
+@media (max-width: 576px) {
+  .s-2{
+    display: none;
+  }
+
+  .s-1{
+    width: 100%!important;
+  }
+}
